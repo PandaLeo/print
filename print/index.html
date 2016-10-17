@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>收据打印</title>
+    <link href="index.css" rel="stylesheet">
+</head>
+<body>
+<table border="1" id="list">
+    <tr>
+        <th><input type="checkbox" id="full">全选</th>
+        <th>日期</th>
+        <th>编号</th>
+        <th>交款单位</th>
+        <th>收款方式</th>
+        <th>收款事由</th>
+        <th>大写金额</th>
+        <th>收款金额</th>
+    </tr>
+    <tr>
+        <td><input type="checkbox" class="push"></td>
+        <td><input type="date"></td>
+        <td>后台给出</td>
+        <td><textarea></textarea></td>
+        <td>
+            <select>
+                <option >现金</option>
+                <option >刷卡</option>
+                <option >转账</option>
+            </select>
+        </td>
+        <td>宗客加盟金</td>
+        <td>壹万圆整</td>
+        <td>10000.00元</td>
+    </tr>
+</table>
+<button class="info">输入</button>
+<button class="print">打印</button>
+<div id="get">
+    <div id="num">No.<p class="num"></p></div>
+    <div id="title">日月昌投资控股股份有限公司收款收据
+        <div class="get_time">入账日期:<p class="get_time"></p></div>
+    </div>
+    <div id="left">
+        <div class="content">
+            交款单位：<p id="name"></p>
+        </div>
+        <div class="content">
+            人民币（大写）：<p id="big"></p>
+        </div>
+        <div class="content">
+            收款事由<p id="reason"></p>
+        </div>
+        <div class="content"></div>
+    </div>
+    <div id="right">
+        <div class="content">
+            收款方式<p id="cash"></p>
+        </div>
+        <div class="content">
+            ￥<p id="money"></p>
+        </div>
+        <div class="content"></div>
+        <div class="content">
+            收款日期<p class="get_time"></p>
+        </div>
+    </div>
+    <div id="footer">经办人:</div>
+</div>
+<script src="index.js"></script>
+<script src=""></script>
+</body>
+</html>

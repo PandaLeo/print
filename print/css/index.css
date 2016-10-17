@@ -1,0 +1,9 @@
+*{ margin: 0; padding: 0;}
+#get { width: 500px; height: 300px; border: solid 1px; position: relative; text-align: center; font-size: 16px; margin: 0 auto;}
+#num { position: absolute; width: 100px; height: 50px; right: 0;}
+#title { font-weight: bold; font-size: 18px; height: 60px;}
+.get_time { font-size: 12px; font-weight: lighter;}
+#left,#right { float: left;}
+#left { width: 300px; height: 200px;}
+#right { width: 200px; height: 200px;}
+.content { text-align: left; padding: 10px; height: 30px;}
