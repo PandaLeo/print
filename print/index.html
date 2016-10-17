@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>收据打印</title>
-    <link href="index.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/index.js"></script>
 </head>
 <body>
 <table border="1" id="list">
@@ -19,8 +21,8 @@
     </tr>
     <tr>
         <td><input type="checkbox" class="push"></td>
-        <td><input type="date"></td>
-        <td>后台给出</td>
+        <td><input id="today" type="date" value="2011-11-1"></td>
+        <td>number</td>
         <td><textarea></textarea></td>
         <td>
             <select>
@@ -49,13 +51,13 @@
             人民币（大写）：<p id="big"></p>
         </div>
         <div class="content">
-            收款事由<p id="reason"></p>
+            收款事由:<p id="reason"></p>
         </div>
         <div class="content"></div>
     </div>
     <div id="right">
         <div class="content">
-            收款方式<p id="cash"></p>
+            收款方式:<p id="cash"></p>
         </div>
         <div class="content">
             ￥<p id="money"></p>
@@ -67,7 +69,5 @@
     </div>
     <div id="footer">经办人:</div>
 </div>
-<script src="index.js"></script>
-<script src=""></script>
 </body>
 </html>
