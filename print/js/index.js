@@ -1,16 +1,16 @@
 /**
  * Created by Administrator on 2016/10/17.
  */
-//初始化时间为当天
-// function today(){
-//     var today=new Date();
-//     var h=today.getFullYear();
-//     var m=today.getMonth()+1;
-//     var d=today.getDate();
-//     return h+"-"+m+"-"+d;
-// }
-// alert(today());
-// document.getElementById("today").value= today();
+    //初始化时间为当天
+    function today(){
+        var today=new Date();
+        var h=today.getFullYear();
+        var m=(today.getMonth()+1 < 10 ? '0'+(today.getMonth()+1) : today.getMonth()+1);
+        var d=(today.getDate()+1 < 10 ? '0'+(today.getDate()+1) : today.getDate()+1);
+        return h+"-"+m+"-"+d;
+    }
+    document.getElementById("today").value=today();
+
 //打包替换数据
 $(document).ready(function() {
     $(".info").click(function () {
