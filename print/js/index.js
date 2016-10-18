@@ -88,13 +88,6 @@ $(document).ready(function() {
             $(".big").text($("tr:eq("+k+") td:eq(6)").text());
         });
     });
-    // $(".print").click(function () {
-    //     $(".info:eq(0)").trigger("click");
-    //     printWithoutAlert();
-    //     $(".info:eq(1)").trigger("click");
-    //     printWithoutAlert();
-    // })
-
     //勾选记录index
     var str=[];
     $(".push").each(function (i) {
