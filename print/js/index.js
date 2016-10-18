@@ -88,10 +88,40 @@ $(document).ready(function() {
             $(".big").text($("tr:eq("+k+") td:eq(6)").text());
         });
     });
+    // $(".print").click(function () {
+    //     $(".info:eq(0)").trigger("click");
+    //     printWithoutAlert();
+    //     $(".info:eq(1)").trigger("click");
+    //     printWithoutAlert();
+    // })
+
+    //勾选记录index
+    var str=[];
+    $(".push").each(function (i) {
+        $(this).click(function () {
+            if (this.checked) {
+                str.push(i);
+            }else {
+                str.splice($.inArray(i, str), 1);
+            }
+        });
+    });
+    //全选功能
+    $("#full").click(
+        function(){
+            if(this.checked){
+                $(".push").prop('checked', true);
+                for (var i = 0; i<$(".push").length; i++){str.push(i);}
+            }else{
+                $(".push").prop('checked', false);
+                str =[];
+            }
+        }
+    );
     $(".print").click(function () {
-        $(".info:eq(0)").trigger("click");
-        printWithoutAlert();
-        $(".info:eq(1)").trigger("click");
-        printWithoutAlert();
-    })
+        for (var i = 0; i<str.length; i++){
+            $(".info:eq("+str[i]+")").trigger("click");
+            printWithoutAlert();
+        }
+    });
 });
