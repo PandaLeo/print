@@ -28,11 +28,11 @@
 #main { width: 460px; height: 250px; border: 1px solid black; padding: 0 0 0 20px;}
 .money { width: 104px;}
 .name { width: 150px;}
-.cash { width: 48px;}
+.cash { width: 40px;}
 .reason { width: 320px;}
 .ps { width: 320px;}
 .big { width: 102px;}
 .contentB { text-align: left; padding: 10px; height: 30px; width: 460px; display: block; float: left;}
 .contentA { text-align: left; padding: 10px; height: 30px; width: 160px; display: block; float: right;}
-.footer { float: right; width: 314px; padding: 5px;}
+.footer { float: right; width: 290px; padding: 5px;}
 
