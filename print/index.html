@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <title>收据打印</title>
     <link href="css/index.css" rel="stylesheet">
-    <script src="js/jquery.min.js"></script>
-    <script src="js/index.js"></script>
+    <object id="WebBrowser" classid=CLSID:8856F961-340A-11D0-A96B-00C04FD705A2 height="0" width="0">
+    </object>
 </head>
 <body>
-<table border="1" id="list">
+<table border="1" class="list Noprn">
     <tr>
         <th><input type="checkbox" id="full">全选</th>
         <th>日期</th>
@@ -18,10 +18,11 @@
         <th>收款事由</th>
         <th>大写金额</th>
         <th>收款金额</th>
+        <th>输入信息</th>
     </tr>
     <tr>
         <td><input type="checkbox" class="push"></td>
-        <td><input id="today" type="text" value=""/></td>
+        <td><input class="today" type="date"/></td>
         <td>number</td>
         <td><textarea></textarea></td>
         <td>
@@ -34,40 +35,61 @@
         <td>宗客加盟金</td>
         <td>壹万圆整</td>
         <td>10000.00元</td>
+        <td><button class="info" >输入</button></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" class="push"></td>
+        <td><input class="today" type="date" value="2011-11-11"/></td>
+        <td>number</td>
+        <td><textarea></textarea></td>
+        <td>
+            <select>
+                <option >现金</option>
+                <option >刷卡</option>
+                <option >转账</option>
+            </select>
+        </td>
+        <td>宗客加盟金</td>
+        <td>壹万圆整</td>
+        <td>8000.00元</td>
+        <td><button class="info" >输入</button></td>
     </tr>
 </table>
-<button class="info">输入</button>
-<button class="print">打印</button>
+<button class="print Noprn">打印</button>
+<div id="main"><div>
+<div id="boot"></div>
 <div id="get">
     <div id="num">No.<p class="num"></p></div>
-    <div id="title">日月昌投资控股股份有限公司收款收据
-        <div class="get_time">入账日期:<p class="get_time"></p></div>
-    </div>
+    <div class="title"><p class="undertitle">日月昌投资控股股份有限公司收款收据</p></div>
+    <div style=" font-size: 12px; height: 20px;">入账日期:<p class="get_time underline"></p></div>
     <div id="left">
         <div class="content">
-            交款单位：<p id="name"></p>
+            交款单位：<p class="name underline"></p>
         </div>
         <div class="content">
-            人民币（大写）：<p id="big"></p>
+            人民币（大写）：<p class="big underline"></p>
         </div>
         <div class="content">
-            收款事由:<p id="reason"></p>
+            收款事由:<p class="reason underline"></p>
         </div>
         <div class="content"></div>
     </div>
     <div id="right">
         <div class="content">
-            收款方式:<p id="cash"></p>
+            收款方式:<p class="cash underline"></p>
         </div>
         <div class="content">
-            ￥<p id="money"></p>
+            ￥<p class="money underline"></p>
         </div>
         <div class="content"></div>
         <div class="content">
-            收款日期<p class="get_time"></p>
+            收款日期<p class="get_time underline"></p>
         </div>
     </div>
-    <div id="footer">经办人:</div>
+    <div class="reg">收据存根<br><br>妥善保存</div>
+    <div class="footer">经办人:<p class="underline"></p></div>
 </div>
+<script src="js/jquery.min.js"></script>
+<script src="js/index.js"></script>
 </body>
 </html>
