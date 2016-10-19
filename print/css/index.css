@@ -13,26 +13,26 @@
     .Noprn{ display:none;}
 }
 .list {text-align: center;}
-#get { width: 650px; height: 300px; position: relative; text-align: center; font-size: 18px; margin: 26px auto;}
-#num { width: 130px; height: 30px; right: 0; position: absolute;}
+.get { width: 650px; height: 367px; position: relative; text-align: center; font-size: 18px; margin: 26px auto;}
+.div_num { width: 150px; height: 30px; right: 0; position: absolute;}
 .title { font-weight: bold; font-size: 20px; height: 30px; padding: 10px 5px 5px 5px;}
-.get_time { font-size: 14px; font-weight: lighter; text-decoration: none;}
+.get_time { font-size: 14px;  text-decoration: none;}
 .undertitle { border-bottom: 2px black solid;}
 .underline { border-bottom: 1px solid black; }
-#left,#right { float: left;}
-#left { width: 364px; height: 100px;}
-#right { width: 208px; height: 100px;}
+.div_left,.div_right { float: left;}
+.div_left { width: 344px; height: 100px;}
+.div_right { width: 228px; height: 100px;}
 .reg { width: 26px; height: 100px; float: left; font-size: 14px;}
 .content { text-align: left; padding: 10px; height: 30px;}
-#get p { display: inline-block;}
-#main { width: 598px; height: 250px; border: 1px solid black; padding: 10px 0 0 20px;}
-.money { width: 135px;}
+.get p { display: inline-block;}
+.div_main { width: 598px; height: 250px; border: 1px solid black; padding: 10px 0 0 20px;}
+.money { width: 144px;}
 .name { width: 195px;}
-.cash { width: 52px;}
+.cash { width: 72px;}
 .reason { width: 416px;}
-.ps { width: 416px;}
-.big { width: 133px;}
+.ps { width: 416px; font-size: 16px;}
+.big { width: 141px;}
 .contentB { text-align: left; padding: 10px; height: 30px; width: 598px; display: block; float: left;}
-.contentA { text-align: left; padding: 10px; height: 30px; width: 208px; display: block; float: right;}
-.footer { float: right; width: 377px; padding: 5px;}
+.contentA { text-align: left; padding: 10px; height: 30px; width: 198px; display: block; float: right;}
+.footer { float: right; width: 377px; padding: 5px; height: 30px;}
 

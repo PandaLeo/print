@@ -86,6 +86,7 @@ $(document).ready(function() {
             $(".cash").text($("tr:eq("+k+") td:eq(4) option:selected").text());
             $(".reason").text($("tr:eq("+k+") td:eq(5)").text());
             $(".big").text($("tr:eq("+k+") td:eq(6)").text());
+            $(".ps").text($("tr:eq("+k+") td:eq(8)>textarea").val());
         });
     });
     //勾选记录index
@@ -116,5 +117,8 @@ $(document).ready(function() {
             $(".info:eq("+str[i]+")").trigger("click");
             printWithoutAlert();
         }
+    });
+    $(".printpre").click(function () {
+            printPrieview();
     });
 });
