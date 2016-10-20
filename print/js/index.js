@@ -11,16 +11,15 @@ function printWithoutAlert()
 {
     document.all.WebBrowser.ExecWB(6,6);
 }
-//打印设置
-function printSetup()
-{
-    document.all.WebBrowser.ExecWB(8,1);
-}
-
 //打印预览
 function printPrieview()
 {
     document.all.WebBrowser.ExecWB(7,1);
+}
+//打印设置
+function printSetup()
+{
+    document.all.WebBrowser.ExecWB(8,1);
 }
 
 function printImmediately()

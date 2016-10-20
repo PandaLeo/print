@@ -13,7 +13,7 @@
     .Noprn{ display:none;}
 }
 .list {text-align: center;}
-.get { width: 650px; height: 367px; position: relative; text-align: center; font-size: 18px; margin: 26px auto;}
+.get { width: 650px; height: 357px; position: relative; text-align: center; font-size: 18px; margin: 26px auto;}
 .div_num { width: 150px; height: 30px; right: 0; position: absolute;}
 .title { font-weight: bold; font-size: 20px; height: 30px; padding: 10px 5px 5px 5px;}
 .get_time { font-size: 14px;  text-decoration: none;}
@@ -34,5 +34,5 @@
 .big { width: 141px;}
 .contentB { text-align: left; padding: 10px; height: 30px; width: 598px; display: block; float: left;}
 .contentA { text-align: left; padding: 10px; height: 30px; width: 198px; display: block; float: right;}
-.footer { float: right; width: 377px; padding: 5px; height: 30px;}
+.footer { float: right; width: 377px; padding: 5px; height: 20px;}
 
